@@ -1,11 +1,12 @@
 import React from 'react'
-import Table from '../components/Table'
+import MovieList from '../components/MovieList'
+
 import './scss/stylesheets.scss'
 
 function App() {
   return (
     <>
-      <Table />
+      <MovieList />
       <div>{import.meta.env.VITE_FOREVER}</div>
     </>
   )

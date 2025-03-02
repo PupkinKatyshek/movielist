@@ -1,13 +1,59 @@
 $red: red;
-
+$pure: rgb(205, 205, 224);
 body {
   background-color: green;
 }
 
 #root {
-  background-color: $red;
+  background-color: $pure;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+.title {
+  // height: 28px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.MovieList {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1010px;
+  gap: 37px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.movie-card {
+  display: flex;
+  width: 454px;
+  height: 281px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movie-poster {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-details {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.movie-text {
+  width: 228px;
+  height: 129px;
+  overflow: hidden;
 }
